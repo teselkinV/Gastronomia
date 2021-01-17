@@ -1,12 +1,12 @@
 --- Main page ---
 - Navbar -
- + Main
- + About
- + Recipes
- + Contacts
- + Language 
- + Search field
- + Sign in 
+    + Main
+    + About
+    + Recipes
+    + Contacts
+    + Language 
+    + Search field
+    + Sign in 
 - Banner -
 - Welcome text -
 - Latest posts -
@@ -41,9 +41,16 @@
 --- Recipe page ---
 - Navbar -
 - Banner -
+    + Title 
+    + Description 
+    + Time
+    + Amount
+    + Price
+    + Level of difficulty
+    + Availability of products
 - Recipe text -
- + Ingridients 
- + Callories
- + Method
- + Photos
+    + Ingridients 
+    + Callories
+    + Method
+    + Photos
 - Footer -
