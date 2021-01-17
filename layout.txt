@@ -1,0 +1,19 @@
+--- Main page ---
+- Navbar -
+- Banner -
+- Welcome text -
+- Latest posts -
+- Banner with link -
+- Footer -
+
+--- Recipes page ---
+- Navbar -
+- Banner -
+- Recipes cards -
+- Footer -
+
+--- Recipe page ---
+- Navbar -
+- Banner -
+- Recipe text -
+- Footer -
