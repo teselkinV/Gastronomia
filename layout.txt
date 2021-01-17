@@ -49,8 +49,14 @@
     + Level of difficulty
     + Availability of products
 - Recipe text -
-    + Ingridients 
+    + Ingridients
+        = Titile 
+        = Scale 
+        Ingridients title for  
     + Callories
     + Method
+        = Title 
+        = Time 
+        = Type of cooking
     + Photos
 - Footer -
