@@ -1,19 +1,49 @@
 --- Main page ---
 - Navbar -
+ + Main
+ + About
+ + Recipes
+ + Contacts
+ + Language 
+ + Search field
+ + Sign in 
 - Banner -
 - Welcome text -
 - Latest posts -
 - Banner with link -
 - Footer -
 
+--- About me ---
+- My foto -
+- Text -
+- Latest recipes -
+
 --- Recipes page ---
 - Navbar -
 - Banner -
+- Category cards -
+- Latest recipes -
+- Favorite recipes -
+- Interesting recipes block -
+- Tecniques block -
+- Christmas recipes -
+- Footer -
+
+--- Category page ---
+- Navbar -
+- Banner -
 - Recipes cards -
+- Christmas recipes -
+- Summer recipes -
+- Big party -
 - Footer -
 
 --- Recipe page ---
 - Navbar -
 - Banner -
 - Recipe text -
+ + Ingridients 
+ + Callories
+ + Method
+ + Photos
 - Footer -
