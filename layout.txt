@@ -22,6 +22,16 @@
 - Navbar -
 - Banner -
 - Category cards -
+    + Bread 
+    + Bakery 
+    + Patisserie 
+    + Meat
+    + Fish 
+    + Seafood 
+    + Special occasions
+        = Christmas recipes
+        = Winter recipes
+        = Big party
 - Latest recipes -
 - Favorite recipes -
 - Interesting recipes block -
