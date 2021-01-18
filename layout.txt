@@ -1,0 +1,15 @@
+--- Main page ---
+- Navbar -
+    + Main
+    + About
+    + Recipes
+    + Contacts
+    + Language 
+    + Search field
+    + Sign in 
+- Banner -
+- Welcome text -
+- Latest posts -
+- Banner with link -
+- Footer -
+
