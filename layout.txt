@@ -25,6 +25,10 @@
     + Bread 
     + Bakery 
     + Patisserie 
+        = Mousse cake
+        = Tarts 
+        = Creme 
+        = Eclairs  
     + Meat
     + Fish 
     + Seafood 
