@@ -13,3 +13,8 @@
 - Banner with link -
 - Footer -
 
+--- About me ---
+- My foto -
+- Text -
+- Latest recipes -
+
