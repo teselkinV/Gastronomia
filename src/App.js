@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
 
+import Routerc from './components/Routerc';
+
 function App() {
   return (
     <div className="App">
-     <h1>Recipe app</h1>
+     <Routerc />
     </div>
   );
 }

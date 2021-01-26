@@ -6,7 +6,7 @@ import Main from '../Pages/Main';
 import Category from '../Pages/Category';
 import Recipe from '../Pages/Recipe';
 
-function Router() {
+function Routerc() {
   return (
     <React.Fragment>
       <Router>
@@ -20,4 +20,4 @@ function Router() {
   );
 }
 
-export default Router;
+export default Routerc;
