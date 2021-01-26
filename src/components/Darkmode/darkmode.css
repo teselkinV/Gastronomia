@@ -1,0 +1,32 @@
+:root {
+    --fontColor: cornsilk;
+    --grey:rgb(90, 90, 90);
+    --bgColor: black;
+  }
+  * {
+      transition: 
+      background-color 0.2s ease, 
+      color 0.1s ease;
+    }
+  
+  body.dark-mode {
+      background-color: var(--bgColor);
+      color: var(--fontColor);
+  
+  }
+  
+  .dark-mode .navbar {
+    background-color: rgb(3, 2, 97);
+  }
+  
+  .dark-mode .navbar li a {
+    color: var(--fontColor);
+    
+  }
+   .dark-mode .cursor-pointer {
+      color: var(--fontColor);
+   }
+  
+   .dark-mode .navbar li a:hover {
+      color: rgb(0, 75, 10);
+    }
