@@ -3,14 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import "./components/Language/i18nextinit";
 
 ReactDOM.render(
-  // <Suspense fallback="...">
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  // </Suspense>,
   document.getElementById('root')
 );
 
