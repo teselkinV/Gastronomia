@@ -3,8 +3,8 @@ import { Route, Switch } from "react-router-dom";
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import Main from '../Pages/Main';
-import Category from '../Pages/Category';
-import Recipe from '../Pages/Recipe';
+import About from '../Pages/About';
+import Recipes from '../Pages/Recipes';
 
 function Routerc() {
   return (
@@ -12,8 +12,8 @@ function Routerc() {
       <Router>
       <Switch>
         <Route exact path='/' component={Main}/>
-        <Route path="/category" component={Category} />
-        <Route path="/recipe" component={Recipe} />
+        <Route path="/about" component={About} />
+        <Route path="/recipes" component={Recipes} />
       </Switch>
       </Router>
     </React.Fragment>

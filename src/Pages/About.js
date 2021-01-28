@@ -1,14 +1,15 @@
 import React from 'react';
+import { Text } from '../components/Language/Language';
 
 import Navbar from '../components/Navbar';
 
-function Recipe() {
+function About() {
     return (
         <div>
             <Navbar />
-            <h1>Recipe</h1>
+            <h1><Text t="about-us" /></h1>
         </div>
     );
 }
 
-export default Recipe;
+export default About;
