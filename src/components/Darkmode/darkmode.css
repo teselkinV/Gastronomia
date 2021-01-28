@@ -17,11 +17,11 @@
   
   .dark-mode .navbar {
     background-color: rgb(3, 2, 97);
+    padding: 0.5rem;
   }
   
   .dark-mode .navbar li a {
     color: var(--fontColor);
-    
   }
    .dark-mode .cursor-pointer {
       color: var(--fontColor);

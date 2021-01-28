@@ -1,4 +1,5 @@
 import React from 'react';
+import { Text } from '../components/Language/Language';
 
 import Navbar from '../components/Navbar';
 
@@ -6,7 +7,7 @@ function Main() {
     return (
         <div>
             <Navbar />
-            <h1>Main page</h1>
+            <h1><Text t="main-title" /></h1>
         </div>
     );
 }
