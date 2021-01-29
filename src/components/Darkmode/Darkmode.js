@@ -39,14 +39,14 @@ function Darkmode() {
     }, [mode]);
 
     return (
-        <div
-            className="cursor-pointer"
+        <button
+            className="darkmode-btn"
             onClick={() =>
                 setMode(mode => (mode === "dark" ? "light" : "dark"))
             }
         >
             <small> {mode === "dark" ? "Light" : "Dark"} Mode</small>
-        </div>
+        </button>
     );
 }
 
