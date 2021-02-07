@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Main from '../Pages/Main';
 import About from '../Pages/About';
 import Recipes from '../Pages/Recipes';
+import Details from '../components/Details'
 
 function Routerc() {
   return (
@@ -13,7 +14,8 @@ function Routerc() {
       <Switch>
         <Route exact path='/' component={Main}/>
         <Route path="/about" component={About} />
-        <Route path="/recipes" component={Recipes} />
+        <Route exact path="/recipes" component={Recipes} />
+        <Route path="/recipes/:id" component={Details} />
       </Switch>
       </Router>
     </React.Fragment>
