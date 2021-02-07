@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../Navbar';
 import Steps from './Steps';
 
 function Details({match}) {
@@ -41,9 +41,6 @@ function returnSteps() {
                 <p>{recipe.difficult}</p>
                 <div>
                     {returnSteps()}
-                {/* {recipe.methods.map(step => (
-                            <h4 key={recipe.id}>{step.title}</h4>
-                    ))} */}
                 </div>
            </div>
         </div>
