@@ -3,7 +3,7 @@ import Card from './Card';
 
 
 
-function Reci() {
+function Recipe() {
     const [recipes, setRecipes] = useState([]);
     useEffect(() => {
         fetch('https://gastronomia-api.herokuapp.com/recipes')
@@ -27,4 +27,4 @@ function Reci() {
     );
 }
 
-export default Reci;
+export default Recipe;
