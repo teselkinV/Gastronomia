@@ -15,24 +15,15 @@ function Steps({ingridients, steps, title, time}) {
             <h4>{title}</h4>
            <div>{timeStep()}</div>
             <ul>
-                {ingridients.map(ingridient => (
+                {ingridients.map((amount) => (
                     <>
-                    <li>{ingridient[1]}</li>
-                    <li>{ingridient[2]}</li>
-                    <li>{ingridient[3]}</li>
-                    <li>{ingridient[4]}</li>
-                    <li>{ingridient[5]}</li>
-                    <li>{ingridient[6]}</li>
-                    <li>{ingridient[7]}</li>
-                    <li>{ingridient[8]}</li>
-                    <li>{ingridient[9]}</li>
-                    <li>{ingridient[10]}</li>
+                    <li>{Object.entries(amount)}</li>
                     </>
                 ))}
             </ul>
             <ol>
-                {steps.map(st => (
-                    <li>{st[1]}</li>
+                {steps.map((num, st) => (
+                    <li><span style={{fontSize: '20px'}}>{Object.keys(num)} </span>{Object.values(num)}</li>
                 ))}
             </ol>
         </div>
