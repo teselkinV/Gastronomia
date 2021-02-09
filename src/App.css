@@ -41,3 +41,10 @@ li {
   color: grey;
   text-decoration: none;
 }
+
+/* Steps  */
+.steps-span {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px;
+}
