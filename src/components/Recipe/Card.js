@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Card({id, title, methods}) {
+function Card({id, title}) {
     return (
         <div className='recipe'>
             <Link to={`/recipes/${id}`}>

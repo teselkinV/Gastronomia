@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Main from '../Pages/Main';
 import About from '../Pages/About';
 import Recipes from '../Pages/Recipes';
-import Details from '../components/Details'
+import Details from '../components/Recipe/Details';
 
 function Routerc() {
   return (
