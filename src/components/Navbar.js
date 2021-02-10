@@ -2,8 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Text } from './Language/Language';
 
+// Modes components
 import Darkmode from './Darkmode/Darkmode';
 import Selector from '../components/Language/Selector';
+
+// Account components
+import Login from '../components/Account/Login';
 
 const Navbar = () => {
     return (
@@ -14,6 +18,7 @@ const Navbar = () => {
                 <li className='link'><Link to='/recipes'><Text t="recipes" /></Link></li>
                 <li className='link'><Darkmode /></li>
                 <li><Selector /></li>
+                <li className='link'><Link to='/login'><Text t="login" /></Link></li>
             </ul>
         </div>
     );

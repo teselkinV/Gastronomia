@@ -7,6 +7,10 @@ import About from '../Pages/About';
 import Recipes from '../Pages/Recipes';
 import Details from '../components/Recipe/Details';
 
+// Account components
+import Login from '../components/Account/Login';
+import Register from '../components/Account/Register';
+
 function Routerc() {
   return (
     <React.Fragment>
@@ -16,6 +20,8 @@ function Routerc() {
         <Route path="/about" component={About} />
         <Route exact path="/recipes" component={Recipes} />
         <Route path="/recipes/:id" component={Details} />
+        <Route path="/login" component={Login} />
+        <Route path="/register" component={Register} />
       </Switch>
       </Router>
     </React.Fragment>
