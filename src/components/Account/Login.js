@@ -11,7 +11,6 @@ function Login() {
 
     function hanleEmail(e) {
         setSignin({loginEmail: e.target.value})
-        console.log(e.target.value)
     };
 
     function hanlePassword(e) {
@@ -19,7 +18,7 @@ function Login() {
     };
 
     const submitLogin = useEffect(() => {
-        // POST request using fetch inside useEffect React hook
+        console.log(signin)
         const handleSubmitLogin = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -28,7 +27,7 @@ function Login() {
                 password: signin.loginPassword
              })
         };
-        fetch('http://localhost:3000/', handleSubmitLogin)
+        fetch('https://evening-eyrie-30884.herokuapp.com//signin', handleSubmitLogin)
             .then(response => response.json())
             .then(console.log())
             .then(user => {
@@ -36,12 +35,9 @@ function Login() {
                     this.props.loadUser(user)
                 }
             });
-    
-    // empty dependency array means this effect will only run once (like componentDidMount in classes)
     }, [signin]);
 
-
-//    useEffect(() => {
+//     const submitLogin = useEffect(() => {
 //     fetch('http://localhost:3000/signin')
 //     .then(res => res.json())
 //     .then(data => {
