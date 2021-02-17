@@ -30,7 +30,7 @@ function Register() {
                 password: register.password
              })
         };
-        fetch('http://localhost:3000/register', handleSubmitRegister)
+        fetch('https://evening-eyrie-30884.herokuapp.com/register', handleSubmitRegister)
             .then(response => response.json())
             .then(console.log())
             .then(user => {
