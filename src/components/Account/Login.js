@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { Text } from '../Language/Language';
 import Navbar from '../Navbar'
 
-function Login() {
+function Login({onRouteChange}) {
+    // State
     const [signin, setSignin] = useState({
         loginEmail: '',
         loginPassword: ''
@@ -17,6 +18,8 @@ function Login() {
         setSignin({loginPassword: e.target.value})
     };
 
+    // Fetch fron server
+
     const submitLogin = useEffect(() => {
         console.log(signin)
         const handleSubmitLogin = {
@@ -27,7 +30,7 @@ function Login() {
                 password: signin.loginPassword
              })
         };
-        fetch('https://evening-eyrie-30884.herokuapp.com//signin', handleSubmitLogin)
+        fetch('https://rocky-crag-65353.herokuapp.com/signin', handleSubmitLogin)
             .then(response => response.json())
             .then(console.log())
             .then(user => {
@@ -35,7 +38,7 @@ function Login() {
                     this.props.loadUser(user)
                 }
             });
-    }, [signin]);
+    }, []);
 
 //     const submitLogin = useEffect(() => {
 //     fetch('http://localhost:3000/signin')
@@ -67,6 +70,7 @@ function Login() {
                 <button 
                     type='submit'
                     onSubmit={submitLogin}
+                    onClick={onRouteChange}
                     >Submit</button>    
             </form>
             <p>Don't have account?</p>
