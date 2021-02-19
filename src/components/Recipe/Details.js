@@ -8,7 +8,6 @@ function Details({match}) {
         fetch(`https://gastronomia-api.herokuapp.com/recipes/${match.params.id}`)
         .then(res => res.json())
         .then(data => {
-            console.log(data)
             setRecipe(data)
         })
         .catch((error) => console.log(error));

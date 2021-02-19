@@ -30,7 +30,7 @@ function Register() {
                 password: register.password
              })
         };
-        fetch('https://evening-eyrie-30884.herokuapp.com/register', handleSubmitRegister)
+        fetch('https://rocky-crag-65353.herokuapp.com/register', handleSubmitRegister)
             .then(response => response.json())
             .then(console.log())
             .then(user => {
@@ -38,7 +38,7 @@ function Register() {
                     this.props.loadUser(user)
                 }
             });
-    }, [register]);
+    });
 
     return (
         <div>

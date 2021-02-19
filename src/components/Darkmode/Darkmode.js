@@ -11,14 +11,14 @@ function Darkmode() {
         };
     });
 
-    function getPrefMode() {
-        if(!window.matchMedia) return;
-        return window.matchMedia('(prefers-color-scheme: dark)').matches;
-      }
+    // function getPrefMode() {
+    //     if(!window.matchMedia) return;
+    //     return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    //   }
 
     const setPreferedTheme = () => {
         const _mode = localStorage.getItem("mode");
-        const userPreference = getPrefMode();
+        // const userPreference = getPrefMode();
         if (_mode) {
             setMode(_mode);
         } else {
