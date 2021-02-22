@@ -18,14 +18,13 @@ function returnSteps() {
     if (recipe.methods) {
         return recipe.methods.map(step => (
             <Steps 
-                        title={step.title}
-                        ingridients={step.ingridients}
-                        steps={step.steps}
-                        time={step.time}
-                        key={step.id}
-                        />
-    )) 
-        
+                title={step.title}
+                ingridients={step.ingridients}
+                steps={step.steps}
+                time={step.time}
+                key={step.id}
+            />
+        ))   
     }
 }
     return (

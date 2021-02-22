@@ -5,11 +5,12 @@
     + Recipes
     + Contacts
     + Language 
+    + Dark mode
     + Search field
     + Sign in 
 - Banner -
 - Welcome text -
-- Latest posts -
+- Latest recipes -
 - Banner with link -
 - Footer -
 
@@ -18,7 +19,7 @@
 - Text -
 - Latest recipes -
 
---- Recipes page ---
+--- Category page ---
 - Navbar -
 - Banner -
 - Category cards -
@@ -38,12 +39,10 @@
         = Big party
 - Latest recipes -
 - Favorite recipes -
-- Interesting recipes block -
 - Tecniques block -
-- Christmas recipes -
 - Footer -
 
---- Category page ---
+--- Recipe cards page ---
 - Navbar -
 - Banner -
 - Recipes cards -
@@ -85,4 +84,5 @@
     + Scale Ingridients 
     + Print recipe 
     + Translate data from api
+    + Search
 

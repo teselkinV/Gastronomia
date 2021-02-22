@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Text } from './Language/Language';
 
@@ -15,12 +15,6 @@ const Navbar = () => {
                 <li className='link'><Link to='/recipes'><Text t="recipes" /></Link></li>
                 <li className='link'><Darkmode /></li>
                 <li><Selector /></li>
-                {/* <li className='link'>
-                    <button>
-                        <Link to='/login'><Text t="login" /></Link>
-                    </button></li> 
-                <li><button>Sign out</button></li> */}
-                
             </ul>
         </div>
     );
