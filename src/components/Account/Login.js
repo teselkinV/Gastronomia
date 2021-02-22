@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Text } from '../Language/Language';
 import Navbar from '../Navbar'
 
-function Login({onRouteChange}) {
+function Login() {
     // State
     const [signin, setSignin] = useState({
         loginEmail: '',
@@ -11,11 +11,11 @@ function Login({onRouteChange}) {
     });
 
     function hanleEmail(e) {
-        setSignin({loginEmail: e.target.value})
+        setSignin({...signin, loginEmail: e.target.value})
     };
 
     function hanlePassword(e) {
-        setSignin({loginPassword: e.target.value})
+        setSignin({...signin, loginPassword: e.target.value})
     };
 
     // Fetch fron server
@@ -35,7 +35,7 @@ function Login({onRouteChange}) {
             .then(console.log())
             .then(user => {
                 if(user.id) {
-                    this.props.loadUser(user)
+                    console.log(user)
                 }
             });
     }, []);
@@ -70,7 +70,6 @@ function Login({onRouteChange}) {
                 <button 
                     type='submit'
                     onSubmit={submitLogin}
-                    onClick={onRouteChange}
                     >Submit</button>    
             </form>
             <p>Don't have account?</p>

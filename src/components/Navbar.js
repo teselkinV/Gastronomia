@@ -6,17 +6,7 @@ import { Text } from './Language/Language';
 import Darkmode from './Darkmode/Darkmode';
 import Selector from '../components/Language/Selector';
 
-import Login from '../components/Account/Login';
-
 const Navbar = () => {
-    const [route, setRoute] = useState({
-        autorization: 'guest'
-      })
-
-    const onRouteChange = () => {
-          setRoute({autorization: 'user'})
-          console.log("info", route.autorization)
-      }
     return (
         <div className='navbar'>
             <ul className='navbar-list'>
@@ -25,13 +15,12 @@ const Navbar = () => {
                 <li className='link'><Link to='/recipes'><Text t="recipes" /></Link></li>
                 <li className='link'><Darkmode /></li>
                 <li><Selector /></li>
-                {route.autorization === 'guest' 
-                ? <li className='link'>
-                    <button onRouteChange={onRouteChange}>
+                {/* <li className='link'>
+                    <button>
                         <Link to='/login'><Text t="login" /></Link>
                     </button></li> 
-                :  <li><button>Sign out</button></li>
-                }
+                <li><button>Sign out</button></li> */}
+                
             </ul>
         </div>
     );
