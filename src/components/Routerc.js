@@ -2,7 +2,8 @@ import React from 'react';
 import { Route, Switch } from "react-router-dom";
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import Main from '../Pages/Main';
+// Pages
+import Main from '../Pages/MainPage/Main';
 import About from '../Pages/About';
 import Recipes from '../Pages/Recipes';
 import Details from '../components/Recipe/Details';
