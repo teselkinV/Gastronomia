@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Card from '../components/Recipe/Card';
+import Card from '../Recipe/Card';
 
-function LatestRecipes() {
+function BasicTechniques() {
     const [recipes, setRecipes] = useState([]);
     useEffect(() => {
         fetch('https://gastronomia-api.herokuapp.com/recipes')
@@ -12,7 +12,8 @@ function LatestRecipes() {
     }, [])
 
     return (
-        <div>
+        <div style={{textAlign: 'center'}}>
+            <h2>Basic Techniques</h2>
             {recipes.map(recipe => { 
                 if(recipe.category === 'baking') {
                     return <Card 
@@ -27,4 +28,4 @@ function LatestRecipes() {
     );
 }
 
-export default LatestRecipes;
+export default BasicTechniques;
