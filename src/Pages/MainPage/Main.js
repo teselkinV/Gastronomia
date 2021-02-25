@@ -3,7 +3,12 @@ import { Text } from '../../components/Language/Language';
 
 import Navbar from '../../components/Navbar';
 import Welcome from './Welcome';
-import LatestRecipes from '../../components/LatestRecipes';
+import FavoriteRecipes from '../../components/CardsWithRecipe/FavoriteRecipes';
+import NewRecipes from '../../components/CardsWithRecipe/NewRecipes';
+import BasicTechniques from '../../components/CardsWithRecipe/BasicTechniques';
+import SummerCollection from '../../components/CollectionsOfRecipes/SummerCollection';
+import MousseCakesCollection from '../../components/CollectionsOfRecipes/MousseCakesCollection';
+import Footer from '../../components/Footer/Footer';
 
 function Main() {
     return (
@@ -11,7 +16,12 @@ function Main() {
             <Navbar />
             <h1><Text t="main-title" /></h1>
             <Welcome />
-            <LatestRecipes />
+            <FavoriteRecipes />
+            <SummerCollection />
+            <NewRecipes />
+            <MousseCakesCollection />
+            <BasicTechniques />
+            <Footer />
         </div>
     );
 }
