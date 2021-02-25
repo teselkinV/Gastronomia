@@ -1,78 +1,110 @@
---- Main page ---
-- Navbar -
-    + Main
-    + About
-    + Recipes
-    + Contacts
-    + Language 
-    + Dark mode
-    + Search field
-    + Sign in 
-- Banner -
-- Welcome text -
-- Latest recipes -
-- Banner with link -
+
+
+-:- Main page -:-
+    - Navbar -
+        + Main
+        + About
+        + Recipes
+        + Contacts
+        + Night mode switch 
+        + Language 
+        + Search field
+        + Sign in 
+    - Banner -
+    - Welcome text with link to About page -
+    - Favorite recipes cards -
+    - Summer recipes (banner with link) -
+    - New recipes cards -
+    - Mousse cakes (banner with link) -
+    - Basic techniques cards
+    - Footer - 
+
+-:- About us page -:-
+    - My foto -
+    - Text -
+    - Favorite recipes cards -
+    - Breads (banner with link) -
+    - Recipe cards category? -
+    - Footer
+
+-:- Category recipes page -:-
+    - Navbar -
+    - Banner -
+    - Category cards -
+        + Bread 
+        + Bakery 
+        + Patisserie 
+            = Mousse cake
+            = Tarts 
+            = Creme 
+            = Eclairs  
+        + Meat
+        + Fish 
+        + Seafood 
+        + Special occasions
+            = Christmas recipes
+            = Winter recipes
+            = Big party
+    + Basic techniques 
+    - Latest recipes -
+    - Favorite recipes -
+    - Interesting recipes block -
+    - Tecniques block -
+    - Christmas recipes -
+    - Footer -
+
+-:- Card with recipes page -:-
+    - Navbar -
+    - Banner -
+    - Recipes cards -
+    - Set of recipes (banner with link)  -
+    - Footer -
+
+-:- Recipe details page -:-
+    - Navbar -
+    - Banner -
+        + Title 
+        + Description 
+        + Time
+        + Amount
+        + Price
+        + Level of difficulty
+        + Availability of products
+    + Save
+    + Print
+    + Share
+    - Recipe text -
+        + Ingridients
+            = Titile 
+            = Scale 
+            Ingridients title for  
+        + Callories
+        + Method
+            = Title 
+            = Time 
+            = Type of cooking
+        + Photos
 - Footer -
 
---- About me ---
-- My foto -
-- Text -
-- Latest recipes -
+-:- Contacts  page -:-
+    - Navbar
+    - Banner
+    - Address 
+    - Email
+    - FAQ
+    - Footer
 
---- Category page ---
-- Navbar -
-- Banner -
-- Category cards -
-    + Bread 
-    + Bakery 
-    + Patisserie 
-        = Mousse cake
-        = Tarts 
-        = Creme 
-        = Eclairs  
-    + Meat
-    + Fish 
-    + Seafood 
-    + Special occasions
-        = Christmas recipes
-        = Winter recipes
-        = Big party
-- Latest recipes -
-- Favorite recipes -
-- Tecniques block -
-- Footer -
+-:- 404 page -:-
+    + Oops, page not found
+    + Go to home page
+    + Backgound image or animation
 
---- Recipe cards page ---
-- Navbar -
-- Banner -
-- Recipes cards -
-- Christmas recipes -
-- Summer recipes -
-- Big party -
-- Footer -
-
---- Recipe page ---
-- Navbar -
-- Banner -
-    + Title 
-    + Description 
-    + Time
-    + Amount
-    + Price
-    + Level of difficulty
-    + Availability of products
-- Recipe text -
-    + Ingridients
-        = Titile 
-        = Scale 
-        Ingridients title for  
-    + Callories
-    + Method
-        = Title 
-        = Time 
-        = Type of cooking
-    + Photos
-- Footer -
+* Footer block *
+ + Nav links
+        + Term os use
+        + Privacy policy
+        + All rights reserved
+ + Logo
 
 
 * * * * * -------- Functions --------- * * * * * 
