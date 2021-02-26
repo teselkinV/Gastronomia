@@ -11,6 +11,7 @@ import Details from '../components/Recipe/Details';
 // Account components
 import Login from '../components/Account/Login';
 import Register from '../components/Account/Register';
+import SearchResults from '../components/Search/SearchResults';
 
 function Routerc() {
   return (
@@ -23,6 +24,7 @@ function Routerc() {
         <Route path="/recipes/:id" component={Details} />
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
+        <Route path="/search" component={SearchResults} />
       </Switch>
       </Router>
     </React.Fragment>

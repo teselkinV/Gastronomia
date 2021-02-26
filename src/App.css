@@ -17,6 +17,10 @@ li {
   color: black;
 }
 
+.link {
+  margin: 1rem;
+}
+
 /*  */
 .darkmode-btn {
   background-color: rgb(255, 204, 0);
