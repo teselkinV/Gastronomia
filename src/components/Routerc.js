@@ -21,8 +21,8 @@ function Routerc() {
       <Switch>
         <Route exact path='/' component={Main}/>
         <Route path="/about" component={About} />
-        <Route path="/recipes" component={Recipes} />
-        <Route path="/category" component={Category} />
+        <Route exact path="/recipes" component={Recipes} />
+        <Route exact path="/category" component={Category} />
         <Route path="/recipes/:id" component={Details} />
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
