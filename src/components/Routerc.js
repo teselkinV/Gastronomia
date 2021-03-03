@@ -6,6 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Main from '../Pages/MainPage/Main';
 import About from '../Pages/About';
 import Recipes from '../Pages/Recipes';
+import Category from '../Pages/Category';
 import Details from '../components/Recipe/Details';
 
 // Account components
@@ -20,7 +21,8 @@ function Routerc() {
       <Switch>
         <Route exact path='/' component={Main}/>
         <Route path="/about" component={About} />
-        <Route exact path="/recipes" component={Recipes} />
+        <Route path="/recipes" component={Recipes} />
+        <Route path="/category" component={Category} />
         <Route path="/recipes/:id" component={Details} />
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />

@@ -37,6 +37,7 @@ function returnSteps() {
                 <p>{recipe.time}</p>
                 <p>{recipe.price}</p>
                 <p>{recipe.difficult}</p>
+                <img src={recipe.banner}/>
                 <div>
                     {returnSteps()}
                 </div>

@@ -4,7 +4,9 @@
     "about": "О нас",
     "about-us": "Про нас",
     "main-title": "Главная страница",
-    "recipe-title": "Категории рецептов",
+    "category-title": "Категории рецептов",
+    "recipe-title": "Рецепты",
     "login": "Вход",
-    "register": "Регистрация"
+    "register": "Регистрация",
+    "category": "Категории"
 }
