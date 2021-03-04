@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function CategoryCard({id, title}) {
     return (
         <div className='recipe'>
-            <Link to={`/category/${title}`}>
+            <Link to={`/category/${id}`}>
             <h2>{title}</h2>
             </Link>
         </div>
