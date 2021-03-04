@@ -13,7 +13,6 @@ function Details({match}) {
         .catch((error) => console.log(error));
     }, [])
     
-console.log(recipe.methods)
 function returnSteps() {
     if (recipe.methods) {
         return recipe.methods.map(step => (
