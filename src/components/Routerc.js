@@ -5,7 +5,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 // Pages
 import Main from '../Pages/MainPage/Main';
 import About from '../Pages/About';
-import Recipes from '../Pages/Recipes';
 import Category from '../Pages/Category';
 
 // Recipes
@@ -26,7 +25,6 @@ function Routerc() {
       <Switch>
         <Route exact path='/' component={Main}/>
         <Route path="/about" component={About} />
-        <Route exact path="/recipes" component={Recipes} />
         <Route exact path="/category" component={Category} />
         <Route path="/recipes/:id" component={Details} />
         <Route path="/category/:id" component={CategoryDetails} />
