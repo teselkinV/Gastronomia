@@ -3,7 +3,7 @@ import Card from './Card';
 
 
 
-function Recipe() {
+function Recipe({category}) {
     const [recipes, setRecipes] = useState([]);
     useEffect(() => {
         fetch('https://gastronomia-api.herokuapp.com/recipes')
@@ -15,14 +15,16 @@ function Recipe() {
 
     return (
         <div>
-            {recipes.map(recipe => (
-                <Card 
-                    id={recipe.id}
-                    title={recipe.title}
-                    key={recipe.id}
-                    methods={recipe.methods}
-                    />
-            ))}
+            {recipes.map(recipe => { 
+                if(recipe.categoryId === category.id) {
+                    return <Card 
+                        id={recipe.id}
+                        title={recipe.title}
+                        key={recipe.id}
+                        methods={recipe.methods}
+                        />
+                }
+            })}
         </div>
     );
 }
