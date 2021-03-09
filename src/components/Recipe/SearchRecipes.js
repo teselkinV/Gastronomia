@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Card from './Card';
-import List from './List';
 
 
 function SearchRecipes() {
@@ -14,7 +13,7 @@ function SearchRecipes() {
         .then(data => {
             setRecipes(data)
         })
-    })
+    }, [query])
 
     function handleSearch(e) {
         setSearch(e.target.value);
@@ -22,15 +21,14 @@ function SearchRecipes() {
 
     function submitSearch(e) {
         e.preventDefault();
-        setQuery( search);
+        setQuery(search);
     }
 
     return (
         <div>
             <h1>Search results</h1>
             <form style={{display:'flex', justifyContent: 'center'}}
-                onSubmit={submitSearch}
-            >
+                onSubmit={submitSearch}>
                 <input 
                     type='text'
                     name='search'
@@ -38,30 +36,20 @@ function SearchRecipes() {
                     value={search}
                     onChange={handleSearch}
                     />
-            </form>
-            {recipes.filter(recipe => {
-            return recipe.title.toLowerCase().includes(search.toLowerCase())
-        }).map(recipe => {
-            return <Card 
-                id={recipe.id}
-                title={recipe.title}
-                key={recipe.id}
-                methods={recipe.methods}
-                />
-        }
-    )
-        }
-            
-            {/* {recipes.map(recipe => {
+                </form>
+
+            {recipes
+                .filter(recipe => {
+                    return recipe.title.toLowerCase().includes(query.toLowerCase())})
+                .map(recipe => {
                     return <Card 
                         id={recipe.id}
                         title={recipe.title}
                         key={recipe.id}
                         methods={recipe.methods}
                         />
+                    })
                 }
-            )} */}
-            
         </div>
     );
 }
