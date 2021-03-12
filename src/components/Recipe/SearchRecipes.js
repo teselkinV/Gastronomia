@@ -40,7 +40,8 @@ function SearchRecipes() {
 
             {recipes
                 .filter(recipe => {
-                    return recipe.title.toLowerCase().includes(query.toLowerCase())})
+                    return recipe.title.toLowerCase().includes(query.toLowerCase())
+                })
                 .map(recipe => {
                     return <Card 
                         id={recipe.id}
