@@ -116,5 +116,5 @@
     + Scale Ingridients 
     + Print recipe 
     + Translate data from api
-    + Search
+*   + Search 
 
