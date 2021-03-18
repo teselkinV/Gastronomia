@@ -112,7 +112,6 @@
     + Login
     + Logout 
     + AuthO
-    + Favorite recipe list 
     + Scale Ingridients 
     + Print recipe 
     + Translate data from api
