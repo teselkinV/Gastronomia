@@ -13,6 +13,7 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <ul className='navbar-list'>
+                <li>Logo</li>
                 <li className='link'><Link to='/'><Text t="main" /></Link></li>
                 <li className='link'><Link to='/about'><Text t="about" /></Link></li>
                 <li className='link'><Link to='/category'><Text t="category" /></Link></li>
