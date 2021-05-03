@@ -9,6 +9,7 @@ function CategoryDetails({match}) {
         .then(res => res.json())
         .then(data => {
             setCategory(data)
+            console.log("data", data)
         })
         .catch((error) => console.log(error));
     }, []);
