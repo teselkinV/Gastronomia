@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import CategoryCard from './CategoryCard';
 
 
-
 function CategoryRecipes() {
     const [categories, setCategories] = useState([]);
     useEffect(() => {
@@ -20,7 +19,6 @@ function CategoryRecipes() {
                     id={category.id}
                     title={category.title}
                     key={category.id}
-                    methods={category.methods}
                     />
             ))}
         </div>
